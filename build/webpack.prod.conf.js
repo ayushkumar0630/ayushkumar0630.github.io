@@ -12,8 +12,6 @@ const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 const env = require('../config/prod.env')
-
-// add following somewhere in the top
 const PrerenderSpaPlugin = require('prerender-spa-plugin')
 
 const webpackConfig = merge(baseWebpackConfig, {
@@ -119,7 +117,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
-
+    
     new PrerenderSpaPlugin(
       // Path to compiled app
       path.join(__dirname, '../dist'),

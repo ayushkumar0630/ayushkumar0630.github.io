@@ -1,6 +1,6 @@
-# ayushwebsite
+# ayushkumar
 
-> PersonalWebsite
+> Ayush Kumar Website
 
 ## Build Setup
 
